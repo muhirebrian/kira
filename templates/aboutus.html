@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+      <nav class="bg-white shadow-lg">
+        <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+            <div class="flex justify-between items-center">
+               <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+                    <a href="{% url 'index' %}">kIRA</a>
+               </div>
+                <div class="md:hidden">
+                    <button type="button" class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path class="hidden" d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"/>
+                            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row hidden md:block -mx-2">
+                <a href="{% url 'index' %}" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Home</a>
+                <a href="{% url 'aboutus' %}" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">About</a>
+                <a href="{% url 'contactus' %}" class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+<section class="relative pt-16 bg-blueGray-50">
+<div class="container mx-auto">
+  <div class="flex flex-wrap items-center">
+    <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
+      <div class="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-500">
+        <img alt="..." src="https://www.queensu.ca/artsci_online/sites/default/files/styles/hero_image/public/img/course/adobestock_435547149.jpeg?itok=FTcyw7zx" class="w-full align-middle rounded-t-lg">
+        <blockquote class="relative p-8 mb-4">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block h-95-px -top-94-px">
+            <polygon points="-30,95 583,95 583,65" class="text-pink-500 fill-current"></polygon>
+          </svg>
+          <h4 class="text-xl font-bold text-white">
+            Mental health is a big part of who we are.
+          </h4>
+          <p class="text-md font-light mt-2 text-white">
+            Because of misconceptions and stigma surrounding mental health issues, people often suffer in silence and don't seek treatment for their conditions. Mental health awareness is an important initiative to improve understanding of mental health conditions and increase access to healthcare for those who need it.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="w-full md:w-6/12 px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-6/12 px-4">
+          <div class="relative flex flex-col mt-4">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center mb-5 shadow-lg rounded-full bg-white">
+                <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-mental-health-mental-health-flaticons-lineal-color-flat-icons-12.png"/>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">Meditation</h6>
+              <p class="mb-4 text-blueGray-500">
+                Gaining a new perspective on stressful situations,Building skills to manage your stress,Increasing self-awareness,Focusing on the present,Reducing negative emotions.
+              </p>
+            </div>
+          </div>
+          <div class="relative flex flex-col min-w-0">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center mb-5 shadow-lg rounded-full bg-white">
+                <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/000000/external-mental-health-self-development-inipagistudio-mixed-inipagistudio.png"/>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">
+                Habits
+              </h6>
+              <p class="mb-4 text-blueGray-500">
+                Improved management of behavioral health challenges, such as reducing or quitting smoking or drinking alcohol
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-6/12 px-4">
+          <div class="relative flex flex-col min-w-0 mt-4">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center  mb-5 shadow-lg rounded-full bg-white">
+                <img src="https://img.icons8.com/external-photo3ideastudio-lineal-photo3ideastudio/64/000000/external-healthy-virus-photo3ideastudio-lineal-photo3ideastudio-1.png"/>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">Relations</h6>
+              <p class="mb-4 text-blueGray-500">
+                Improved relationships and interactions with other people.
+              </p>
+            </div>
+          </div>
+          <div class="relative flex flex-col min-w-0">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center mb-5 shadow-lg rounded-full bg-white">
+                <img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/000000/external-healthy-fitness-icongeek26-flat-icongeek26.png"/>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">Healthy</h6>
+              <p class="mb-4 text-blueGray-500">
+                Improved physical wellbeing, such as lower blood pressure or reduction in chronic pain.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- component -->
+<style>
+  body {
+    background: #e2e8f0;
+  }
+    *:hover {
+      transition: all 150ms ease-in;
+    }
+  </style>
+  
+  <div class="antialiased max-w-6xl mx-auto my-12 bg-gray-300 px-8">
+    
+  
+    <div class="relative block md:flex items-center">
+      <div class="w-full md:w-1/2 relative z-1 bg-gray-100 rounded shadow-lg overflow-hidden">
+        <div class="text-lg font-medium text-green-500 uppercase p-8 text-center border-b border-gray-200 tracking-wide">OUR MISSION</div>
+        <div class="block sm:flex md:block lg:flex items-center justify-center">
+          <div class="mt-8 sm:m-8 md:m-0 md:mt-8 lg:m-8 text-center">
+            <div class="inline-flex items-center">
+              <span class="text-xl font-medium">Making professional therapy accessible, affordable, and convenient — so anyone who struggles with life’s challenges can get help, anytime and anywhere.</span>
+            </div>
+            <span class="block text-sm text-gray-600 mt-2">for all people</span>
+          </div>
+          {% comment %} <div class="mt-4 mb-8 sm:m-8 md:m-0 md:mt-4 md:mb-8 lg:m-8 text-center">
+            <div class="inline-flex items-center">
+              <span class="text-3xl font-medium">2.9%</span>
+              <span class="text-xl text-gray-600 ml-2">+</span>
+              <span class="text-xl ml-2">20p</span>
+            </div>
+            <span class="block text-sm text-gray-600 mt-2">for non-European cards</span>
+          </div> {% endcomment %}
+        </div>
+        <div class="flex justify-center mt-3">
+          <ul>
+            <li class="flex items-center">
+              <div class="bg-green-200 rounded-full p-2 fill-current text-green-700">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-umbrella"><path class="primary" d="M11 3.05V2a1 1 0 0 1 2 0v1.05A10 10 0 0 1 22 13c0 1.33-2 1.33-2 0a2 2 0 1 0-4 0c0 1.33-2 1.33-2 0a2 2 0 1 0-4 0c0 1.33-2 1.33-2 0a2 2 0 1 0-4 0c0 1.33-2 1.33-2 0a10 10 0 0 1 9-9.95z"/><path class="secondary" d="M11 14a1 1 0 0 1 2 0v5a3 3 0 0 1-6 0 1 1 0 0 1 2 0 1 1 0 0 0 2 0v-5z"/></svg>
+              </div>
+              <span class="text-gray-700 text-lg ml-3">No setup, monthly, or hidden fees</span>
+            </li>
+            <li class="flex items-center mt-3">
+              <div class="bg-green-200 rounded-full p-2 fill-current text-green-700">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-shopping-bag"><path class="primary" d="M5 8h14a1 1 0 0 1 1 .92l1 12A1 1 0 0 1 20 22H4a1 1 0 0 1-1-1.08l1-12A1 1 0 0 1 5 8z"/><path class="secondary" d="M9 10a1 1 0 0 1-2 0V7a5 5 0 1 1 10 0v3a1 1 0 0 1-2 0V7a3 3 0 0 0-6 0v3z"/></svg>
+              </div>
+              <span class="text-gray-700 text-lg ml-3">Pay only for what you use</span>
+            </li>
+            <li class="flex items-center mt-3">
+              <div class="bg-green-200 rounded-full p-2 fill-current text-green-700">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-pie-chart"><path class="primary" d="M14 13h6.78a1 1 0 0 1 .97 1.22A10 10 0 1 1 9.78 2.25a1 1 0 0 1 1.22.97V10a3 3 0 0 0 3 3z"/><path class="secondary" d="M20.78 11H14a1 1 0 0 1-1-1V3.22a1 1 0 0 1 1.22-.97c3.74.85 6.68 3.79 7.53 7.53a1 1 0 0 1-.97 1.22z"/></svg>
+              </div>
+              <span class="text-gray-700 text-lg ml-3">Real-time fee reporting</span>
+            </li>
+          </ul>
+        </div>
+        <a class="block flex items-center justify-center bg-gray-200 hover:bg-gray-300 p-8 text-md font-semibold text-gray-800 uppercase mt-16" href="#">
+          {% comment %} <span>Create account</span>
+          <span class="font-medium text-gray-700 ml-2">➔</span> {% endcomment %}
+        </a>
+      </div>
+      <div class="w-full md:w-1/2 relative z-0 px-8 md:px-0 md:py-16">
+        <div class="bg-blue-900 text-white rounded-b md:rounded-b-none md:rounded-r shadow-lg overflow-hidden">
+          <div class="text-lg font-medium uppercase p-8 text-center border-b border-blue-800 tracking-wide">OUR GOALS</div>
+          <div class="text-center text-sm sm:text-md max-w-sm mx-auto mt-8 text-blue-200 px-8 lg:px-0">
+            Maintain a work-life balance and create enjoyable moments at home
+          </div>
+          <div class="mt-8 border border-blue-800 mx-8 lg:mx-16 flex flex-wrap">
+            <div class="flex items-center justify-center w-1/2 text-center p-4 border-r border-b border-blue-800">Maintain a work-life balance and create enjoyable moments at home</div>
+            <div class="flex items-center justify-center w-1/2 text-center p-4 border-b border-blue-800">Easy access to the benefit leading to higher engagement levels</div>
+            <div class="flex items-center justify-center w-1/2 text-center p-4 border-r border-blue-800">Most comprehensive mental health support for organizations</div>
+            <div class="flex items-center justify-center w-1/2 text-center p-4">Dedicated support</div>
+          </div>
+          <a class="block flex items-center justify-center bg-blue-800 hover:bg-blue-700 p-8 text-md font-semibold text-gray-300 uppercase mt-8" href="#">
+            {% comment %} <span>Contact sales</span>
+            <span class="font-medium text-gray-300 ml-2">➔</span> {% endcomment %}
+          </a>
+        </div>
+      </div>
+    </div>
+      
+    
+  </div>
+<footer class="relative bg-blueGray-50 pt-8 pb-6 mt-2">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</section>
+    </body>
+</html>
